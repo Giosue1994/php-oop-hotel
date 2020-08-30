@@ -6,11 +6,11 @@
     public $created_at;
     public $updated_at;
 
-    // public function constract($_room_number, $_beds, $_created_at) {
-    //   $this->room_number = $_room_number;
-    //   $this->beds = $_beds;
-    //   $this->created_at = $_created_at;
-    // }
+    public function constract($_room_number, $_beds, $_created_at) {
+      $this->room_number = $_room_number;
+      $this->beds = $_beds;
+      $this->created_at = $_created_at;
+    }
 
     public function getStanza() {
       return

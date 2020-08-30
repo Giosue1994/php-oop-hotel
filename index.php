@@ -11,7 +11,7 @@
   </head>
   <body>
 
-    <h1>HOTEL</h1>
+    <h1>STANZE HOTEL</h1>
 
     <ul>
         <?php
@@ -24,7 +24,12 @@
           $stanza->created_at = $this_stanza['created_at'];
           $stanza->updated_at = $this_stanza['updated_at'];
 
-          echo '<li>' . $stanza->getStanza() . '</li>';
+          if (empty($stanza->room_number)) {
+            echo 'Stanza non esistente<br><br>';
+          } else {
+            echo '<li>' . $stanza->getStanza() . '</li>';
+          }
+
         }
         ?>
     </ul>

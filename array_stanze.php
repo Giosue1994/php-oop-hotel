@@ -2,7 +2,7 @@
 $array_stanze = array(
   array(
     'id' => '2',
-    'room_number' => '101',
+    // 'room_number' => '101',
     'floor' => '1',
     'beds' => '3',
     'created_at' => '2018-05-28 13:33:11',
